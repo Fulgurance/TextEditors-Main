@@ -1,5 +1,5 @@
 {
-  "port": "SystemBase-Basic",
+  "port": "TextEditors-Main",
   "name": "Nano",
   "version": "5.8.0",
   "architectures": ["x86_64"],
