@@ -21,19 +21,6 @@ class Target < ISM::Software
 
         makeSource( arguments:  "DESTDIR=#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath} install",
                     path:       buildDirectoryPath)
-
-        copyFile(   "#{buildDirectoryPath}doc/nano.html",
-                    "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/nano-7.2/nano.html")
-
-        copyFile(   "#{buildDirectoryPath}doc/sample.nanorc",
-                    "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/nano-7.2/sample.nanorc")
-    end
-
-    def install
-        super
-
-        runChmodCommand("0644 /usr/share/doc/nano-7.2/nano.html")
-        runChmodCommand("0644 /usr/share/doc/nano-7.2/sample.nanorc")
     end
 
 end
