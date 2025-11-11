@@ -1,0 +1,19 @@
+PORT
+    TextEditors-Main
+NAME
+    Nano
+VERSION
+    8.6.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Small and simple text editor for use on the terminal
+WEBSITE
+    https://www.nano-editor.org/
+DEPENDENCIES
+        @Utilities-Main:Texinfo>=7.0.3
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
